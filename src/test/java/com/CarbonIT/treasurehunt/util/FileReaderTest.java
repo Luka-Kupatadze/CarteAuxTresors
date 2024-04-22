@@ -45,7 +45,7 @@ public class FileReaderTest {
                 C - 3 - 3
                 M - 1 - 1
                 T - 2 - 2 - 3
-                A - Indiana - 0 - 0 - NORTH - AADA
+                A - Indiana - 0 - 0 - N - AADA
                 """;
         writeToFile(data);
 
@@ -89,7 +89,7 @@ public class FileReaderTest {
                 C - 3 - 3
                 M - 1 - 1
                 T - 2 - 2 - 3
-                A - Indiana - 0 - 0 - NORTH - AADA
+                A - Indiana - 0 - 0 - N - AADA
                 """;
         writeToFile(data);
 
@@ -114,7 +114,7 @@ public class FileReaderTest {
                 
                 T - 2 - 2 - 3
                 
-                A - Indiana - 0 - 0 - NORTH - AADA
+                A - Indiana - 0 - 0 - N - AADA
                 """;
         writeToFile(data);
 
@@ -151,7 +151,7 @@ public class FileReaderTest {
                 C - 3 - 3
                 M - 1 - 1
                 T - 2 - 2 - INVALID
-                A - Indiana - 0 - 0 - NORTH - AADA
+                A - Indiana - 0 - 0 - N - AADA
                 """;
         assertThrows(IllegalArgumentException.class, () -> {
             writeToFile(invalidData);
@@ -165,7 +165,7 @@ public class FileReaderTest {
                 C - 3 - 3
                 M - 1 - 1
                 T - INVALID - 2 - 3
-                A - Indiana - 0 - 0 - NORTH - AADA
+                A - Indiana - 0 - 0 - N - AADA
                 """;
         assertThrows(IllegalArgumentException.class, () -> {
             writeToFile(invalidData);
@@ -193,7 +193,7 @@ public class FileReaderTest {
                 C - 3 - 3
                 M - 1 - 1
                 T - 2 - 2 - 3
-                A - Indiana - INVALID - 0 - NORTH - AADA
+                A - Indiana - INVALID - 0 - N - AADA
                 """;
         assertThrows(IllegalArgumentException.class, () -> {
             writeToFile(invalidData);
@@ -207,7 +207,7 @@ public class FileReaderTest {
                 C - 3 - 3
                 M - 1 - 1
                 T - 2 - 2 - 3
-                A - Indiana - 0 - 0 - NORTH - INVALID
+                A - Indiana - 0 - 0 - N - INVALID
                 """;
         assertThrows(IllegalArgumentException.class, () -> {
             writeToFile(invalidData);
@@ -222,7 +222,7 @@ public class FileReaderTest {
                 C - 3 - 3
                 M - 1 - 1
                 T - 2 - 2 - 3
-                X - Indiana - 0 - 0 - NORTH - AADA
+                X - Indiana - 0 - 0 - N - AADA
                 """;
         assertThrows(IllegalArgumentException.class, () -> {
             writeToFile(invalidData);
@@ -236,7 +236,7 @@ public class FileReaderTest {
                 C - 3 - 3
                 M - 1 - 1
                 T - 2 - 2 - INVALID
-                A - Indiana - 0 - 0 - NORTH - AADA
+                A - Indiana - 0 - 0 - N - AADA
                 """;
         assertThrows(IllegalArgumentException.class, () -> {
             writeToFile(invalidData);
@@ -250,7 +250,7 @@ public class FileReaderTest {
                 C - 3 - 3
                 M - 1 - 1
                 T - 3 - 3 - 3
-                A - Indiana - 0 - 0 - NORTH - AADA
+                A - Indiana - 0 - 0 - N - AADA
                 """;
         assertThrows(IllegalArgumentException.class, () -> {
             writeToFile(invalidData);

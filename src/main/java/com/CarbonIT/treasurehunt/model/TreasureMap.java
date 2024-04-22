@@ -73,6 +73,7 @@ public class TreasureMap {
                         adventurer.move();
                         if (map[adventurer.getPosY()][adventurer.getPosX()].getTerrain() == Tile.Terrain.TREASURE) {
                             adventurer.collectTreasure();
+                            map[adventurer.getPosY()][adventurer.getPosX()].removeTreasure();
                         }
                     }
                     else{

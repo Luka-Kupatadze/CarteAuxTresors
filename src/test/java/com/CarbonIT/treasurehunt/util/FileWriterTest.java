@@ -44,7 +44,7 @@ public class FileWriterTest {
             assertEquals("C - 3 - 3", reader.readLine());
             assertEquals("M - 1 - 1", reader.readLine());
             assertEquals("T - 2 - 2 - 5", reader.readLine());
-            assertEquals("A - Indiana - 0 - 0 - NORTH - 0", reader.readLine());
+            assertEquals("A - Indiana - 0 - 0 - N - 0", reader.readLine());
         }
     }
 
@@ -58,8 +58,8 @@ public class FileWriterTest {
             assertEquals("C - 3 - 3", reader.readLine());
             assertEquals("M - 1 - 1", reader.readLine());
             assertEquals("T - 2 - 2 - 5", reader.readLine());
-            assertEquals("A - Indiana - 0 - 0 - NORTH - 0", reader.readLine());
-            assertEquals("A - Lara - 2 - 2 - SOUTH - 0", reader.readLine());
+            assertEquals("A - Indiana - 0 - 0 - N - 0", reader.readLine());
+            assertEquals("A - Lara - 2 - 2 - S - 0", reader.readLine());
         }
     }
 
@@ -74,7 +74,7 @@ public class FileWriterTest {
         try (BufferedReader reader = new BufferedReader(new FileReader(outputFile))) {
             assertEquals("C - 3 - 3", reader.readLine());
             assertEquals("M - 1 - 1", reader.readLine());
-            assertEquals("A - Indiana - 0 - 0 - NORTH - 0", reader.readLine());
+            assertEquals("A - Indiana - 0 - 0 - N - 0", reader.readLine());
         }
     }
 
@@ -113,7 +113,7 @@ public class FileWriterTest {
         try (BufferedReader reader = new BufferedReader(new FileReader(outputFile))) {
             assertEquals("C - 3 - 3", reader.readLine());
             assertEquals("T - 2 - 2 - 5", reader.readLine());
-            assertEquals("A - Indiana - 0 - 0 - NORTH - 0", reader.readLine());
+            assertEquals("A - Indiana - 0 - 0 - N - 0", reader.readLine());
         }
     }
 
@@ -139,7 +139,7 @@ public class FileWriterTest {
 
         try (BufferedReader reader = new BufferedReader(new FileReader(outputFile))) {
             assertEquals("C - 3 - 3", reader.readLine());
-            assertEquals("A - Indiana - 0 - 0 - NORTH - 0", reader.readLine());
+            assertEquals("A - Indiana - 0 - 0 - N - 0", reader.readLine());
         }
     }
 

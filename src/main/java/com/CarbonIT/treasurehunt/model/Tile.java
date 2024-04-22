@@ -33,13 +33,13 @@ public class Tile {
          * Retire un trésor de cette case. Ne fait rien si aucun trésor n'est disponible ou si ce n'est pas une case TREASURE.
          */
         public void removeTreasure() {
-            terrain = Terrain.PLAIN;
-            treasureCount = 0;
-        }
 
-        public void takeTreasure() {
             if (terrain == Terrain.TREASURE && treasureCount > 0) {
                 treasureCount--;
+            }
+            else if (treasureCount == 1) {
+                terrain = Terrain.PLAIN;
+                treasureCount = 0;
             }
         }
 

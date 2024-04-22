@@ -45,9 +45,7 @@ public class AdventurerTest {
     public void testTurnLeftAndRight() {
         // Teste la rotation à gauche et à droite
         adventurer.move(); // Avance 'A'
-        adventurer.getOrientation();
         adventurer.move(); // Avance 'A'
-        adventurer.getOrientation();
         adventurer.move(); // Tourner à Droite 'D'
         assertEquals(Adventurer.Orientation.E, adventurer.getOrientation());
 
